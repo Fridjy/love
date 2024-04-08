@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Oxy, I love you</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Next</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">We have been together</h2>
+			<div id="timer">
+				<b id="d"></b> Days 
+				<b id="h"></b> Hours
+				<b id="m"></b> Minutes
+				<b id="s"></b> Seconds
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/pic1.png", "pic/pic2.png", "pic/pic3.png", "pic/pic4.png", "pic/pic5.png", "pic/pic6.png", 
+			"pic/pic7.png", "pic/pic8.png", "pic/pic9.png", "pic/pic10.png", "pic/pic11.png", "pic/pic12.png", "pic/pic13.png",
+			"pic/pic14.png", "pic/pic15.png", "pic/pic16.png"];
+			var imageIndex = 0;
+			var txtArray = ["Oxy, mon amour, je veux te rappeler que je t'aime éperdument", "Je me souviens encore de ce 18 septembre à Laboule",
+			 "ce premier câlin, ces premiers mots, ces premiers sourires partagés, J'ai encore des frissons en y repensant", "Parfois je pleure de joie en pensant à toi, à ce bel échantillon d'humanité que tu es.",
+			 "Dans l'immensité de l'univers, où les étoiles dansent dans un ballet éternel, mon amour pour toi reste le phare éclatant, guidant mes pas dans l'obscurité.","Tu es la lumière qui dissipe mes ténèbres, le soleil de mes jours, la lune de mes nuits.","Dans le silence de la nuit, mon cœur murmure ton nom comme une prière.", "Avec toi, je suis chez moi, peu importe où nous sommes dans l'immensité du monde.", "Ton rire est le refrain qui berce mes jours, une mélodie d'espoir infini.", "Je t'aime tellement",
+			 "Mon amour pour toi s'enracine dans les abysses de mon âme, grandissant en force et en beauté à chaque souffle que je prends.", "Avec toi, chaque jour se métamorphose en un poème, chaque regard partagé en une strophe d'un amour éternel.", " Ta présence est une symphonie qui résonne dans les cavités les plus secrètes de mon être, réveillant des mélodies oubliées, des harmonies perdues dans le tumulte de l'existence.", "Ton sourire est pour moi comme le lever du soleil sur un monde endormi, chassant les ombres de la nuit pour révéler la richesse d'un monde teinté d'espoir et d'émerveillement. Dans tes yeux, je découvre des galaxies inexplorées, des univers où la beauté et l'amour règnent en maîtres absolus, où chaque étoile est un vœu que nos cœurs ont exaucé ensemble.", "Oxy, Je t'aime avec l'intensité d'un univers en expansion, avec la passion brûlante d'une étoile qui ne connaît ni début ni fin","Dans la mosaïque infinie de la vie, tu es l'œuvre d'art la plus précieuse, le trésor que je chéris plus que tout."];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
